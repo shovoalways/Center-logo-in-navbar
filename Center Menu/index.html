@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">        
+        <title>Mobile Menu</title>
+        <link rel="stylesheet" href="slicknav.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Oswald:400" rel="stylesheet"> 
+        <style>
+           body{background: url(bg.jpg);font-family: 'Oswald', sans-serif;font-size: 15px;font-weight: 400; line-height: 1.5em;}
+            .inner_main_menu {margin: 0 auto; width: 1170px;}    
+            .inner_main_menu ul{margin: 0; padding: 80px 0 0; list-style: none;text-align: right;}    
+            .inner_main_menu ul li{float: none; display: inline-block;position: relative}    
+            .inner_main_menu ul li:nth-child(1){float: left;}    
+            .inner_main_menu ul li:nth-child(2){float: left;}    
+            .inner_main_menu ul li:nth-child(3){float: left;}    
+            .inner_main_menu ul li a{color: #262626; font-size: 20px; text-transform: uppercase;text-decoration: none; display: block;padding: 10px 20px;}    
+            .inner_main_menu ul li a:hover{color: #6FDA44}  
+            .inner_main_menu ul li ul{position: absolute; top: 40px; left: -9999999px; width: 200px;background: #262626; padding: 0;}  
+            .inner_main_menu ul li:hover ul{left: 0px;}   
+            .inner_main_menu ul li ul li{float: left;width: 100%;text-align: left;}  
+            .inner_main_menu ul li ul li a{color: #fff;text-transform: capitalize; font-size: 15px;}  
+            .inner_main_menu ul li ul li a:hover{background: #ddd; color: #262626;}  
+            .inner_main_menu ul li ul li ul{top: 0; left: -999999px;}  
+            .inner_main_menu ul li:hover ul li ul{top: 0; left: -999999px;}  
+            .inner_main_menu ul li ul li:hover ul{top: 0; left: 200px;}  
+            .inner_main_menu ul li:hover a{color: #6FDA44}  
+            .inner_main_menu ul li:hover ul li a{color: #ffffff}  
+            .inner_main_menu ul li ul li a:hover{color: #262626}  
+            .inner_main_menu ul li ul li:hover a{background: #ddd; color: #262626;}  
+            .inner_main_menu ul li ul li:hover ul li a{background: #262626; color: #fff;}  
+            .inner_main_menu ul li ul li ul li a:hover{background: #ddd; color: #262626;}  
+            .slicknav_menu {
+              background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+              font-size: 16px;
+              padding: 5px;
+              display: none;    
+              position: fixed;
+              right: 0;
+              width: 100%;
+              z-index: 99999;
+            }
+            ul.slicknav_nav {
+              background: #262626 none repeat scroll 0 0;
+              left: 0;
+              position: absolute;
+              top: 0;
+              width: 80%;
+            }
+            .slicknav_btn {top: 35px;}
+            #main_menu{width: 100%; position: relative;}
+            .logo_area{width: 300px; height: 300px; position: absolute; left: 50%; top: 0; content: ""; margin-left:-150px; text-align: center; }
+            @media only screen and (min-width: 200px) and (max-width: 767px) { 
+                .slicknav_menu{display: block;}
+                .inner_main_menu{display: none;}
+                .logo_area {height: auto;left: 0;margin-left: 0;position: relative;top: 0;width: 130px;}
+                .logo_area img{height: auto;width: 100%;}
+
+
+
+
+
+
+
+
+
+            }
+        </style>
+    </head>
+    <body>
+        <div id="main_menu">
+            <div class="logo_area">
+                <a href=""><img src="logo.png" alt=""></a>
+            </div>
+            <div class="inner_main_menu">
+                <ul id="menu">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Detail</a>
+                        <ul>
+                            <li><a href="">Dropdown Menu</a></li>
+                            <li><a href="">Dropdown Menu</a>
+                                <ul>
+                                    <li><a href="">Dropdown Sub Menu</a></li>
+                                    <li><a href="">Dropdown Sub Menu</a></li>
+                                    <li><a href="">Dropdown Sub Menu</a></li>
+                                    <li><a href="">Dropdown Sub Menu</a></li>
+                                    <li><a href="">Dropdown Sub Menu</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">Dropdown Menu</a></li>
+                            <li><a href="">Dropdown Menu</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Map</a>
+                        <ul>
+                            <li><a href="">Dropdown Menu</a></li>
+                            <li><a href="">Dropdown Menu</a>
+                                <ul>
+                                    <li><a href="">Dropdown Sub Menu</a></li>
+                                    <li><a href="">Dropdown Sub Menu</a></li>
+                                    <li><a href="">Dropdown Sub Menu</a></li>
+                                    <li><a href="">Dropdown Sub Menu</a></li>
+                                    <li><a href="">Dropdown Sub Menu</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="">Dropdown Menu</a></li>
+                            <li><a href="">Dropdown Menu</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Newsletter</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#menu').slicknav();
+        });
+    </script>
+    </body>
+</html>

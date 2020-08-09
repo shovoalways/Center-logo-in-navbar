@@ -6,6 +6,6 @@ Center logo in navbar Perfect Coding (Most people do it the wrong way). Most of 
 https://www.youtube.com/watch?v=hp-LP8Nv18s
 
 
-🔴 🔴 🔴 Center logo in Responsive Navigation Bar | Part 2
+🔴 Center logo in Responsive Navigation Bar | Part 2
 ============================================================
 https://www.youtube.com/watch?v=svv7jOxaSzw
